@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>欢迎来到悦动工作室官方网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="picture/icon_p.png" />
+        <img src="picture/icon_text.png" />
+        <div>
+            <button id="home_b" onclick="ani_home()" lang-en="HOME" lang-zh="主页">主页</button>
+            <button id="project_b" onclick="ani_project()" lang-en="PROJECT" lang-zh="项目">项目</button>
+            <button id="support_b" onclick="ani_support()" lang-en="SUPPORT" lang-zh="支持">支持</button>
+            <button id="about_b" onclick="ani_about()" lang-en="ABOUT" lang-zh="关于">关于</button>
+        </div>
+        <div id="language" onmousemove="language_select_open()" onmouseout="language_select_close()">
+            <img src="picture/language.png" />
+            <ul id="language_select">
+                <li class="language_option" style="margin-top: 10px;" onclick="switchLanguage('zh')">中文</li>
+                <li><hr/></li>
+                <li class="language_option" style="margin-bottom: 10px;" onclick="switchLanguage('en')">English</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="body">
+        <div id="menu">
+            <span id ="home" class="box">
+                <h1 lang-en="Welcome to the official website of Yuedong Studio" lang-zh="欢迎来到悦动工作室官方网站">欢迎来到悦动工作室官方网站</h1>
+                <h3 lang-en="欢迎来到悦动工作室官方网站" lang-zh="Welcome to the official website of Yuedong Studio">Welcome to the official website of Yuedong Studio</h3>
+                <p lang-en="Yuedong Studio gathers a group of passionate programming enthusiasts. " lang-zh="悦动工作室，汇聚着一群满怀激情的编程爱好者。">悦动工作室，汇聚着一群满怀激情的编程爱好者。</p>
+                <p lang-en="Here, everyone is dedicated to the deep exploration and bold innovation of software development. " lang-zh="在这里，大家一心专注于软件开发的深度探索与大胆创新。">在这里，大家一心专注于软件开发的深度探索与大胆创新。</p>
+                <p lang-en="We are always committed to perfectly integrating imaginative ideas with cutting-edge technology and continuously iterating. " lang-zh="我们始终致力于将奇思妙想的创意与精湛前沿的技术完美融合，持续不断的迭代。">我们始终致力于将奇思妙想的创意与精湛前沿的技术完美融合，持续不断的迭代。</p>
+                <p lang-en="We will strive for excellence in optimization and wholeheartedly create stunning high-quality software products." lang-zh="我们会精益求精的优化，倾心打造出令人惊艳的高品质软件产品。">我们会精益求精的优化，倾心打造出令人惊艳的高品质软件产品。</p>
+            </span>
+
+            <div id ="project" class="box">
+                <h1>项目</h1>
+            </div>
+
+            <div id ="support" class="box">
+                <h1 lang-en="Support us？" lang-zh="支持我们？">支持我们?</h1>
+                <label id="zanzhu_label" lang-en="sponsor" lang-zh="赞助">赞助</label>
+                <div class="support_box">
+                    <label lang-en="Pay Way 1" lang-zh="支付方式1">支付方式1</label>
+                    <img src="picture/wx_zheng.jpg" />
+                </div>
+                <div class="support_box" style="margin-left: 30px;">
+                    <label lang-en="Pay Way 2" lang-zh="支付方式2">支付方式2</label>
+                    <img src="picture/wx_creeper.jpg" />
+                </div>
+            </div>
+
+            <div id="about" class="box">
+                <img id="icon" src="picture/icon.png" /><br>
+                <label id="member_list" lang-en="member list" lang-zh="成员名单">成员名单</label>
+                <div id="person_center_box">
+                    <div id="big_person_box">
+                        <span class="person_box">
+                            <img class="head_picture" src="picture/member_1.png" />
+                            <div>
+                                <label class="name">小郑</label><br>
+                                <p class="introduce">工作室室长，会Python、html等，会Adobe软件，擅长剪辑修图</p>
+                            </div>
+                        </span>
+                        <span class="person_box">
+                            <img class="head_picture" src="picture/member_2.png" />
+                            <div>
+                                <label class="name">超级苦力怕1324</label><br>
+                                <p class="introduce">作为程序组长会python和前端语言，懂得安卓，windows软件和网站开发</p>
+                            </div>
+                        </span>
+                        <span class="person_box">
+                            <img class="head_picture" src="picture/member_3.png" />
+                            <div>
+                                <label class="name">闽西勇敢卷王</label><br>
+                                <p class="introduce">会图形化编程，Python代码会一点，C语言会一点，还会剪辑，修图，建模</p>
+                            </div>
+                        </span>
+                        <span class="person_box">
+                            <img class="head_picture" src="picture/member_4.png"/>
+                            <div>
+                                <label class="name">普通的编程萌新</label><br>
+                                <p class="introduce">一个普通到不能再普通的编程萌新，会Python，还会一点JavaScript、和C语言</p>
+                            </div>
+                        </span>
+                        <span class="person_box">
+                            <img class="head_picture" src="picture/member_5.jpg"/>
+                            <div>
+                                <label class="name">传奇室长</label><br>
+                                <p class="introduce"></p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="findour">
+            <h1 lang-en="contact us" lang-zh="联系我们">联系我们</h1>
+            <hr class="line" />
+            <h3 lang-en="mailbox" lang-zh="邮箱:">邮箱：</h3>
+            <label>yuedong_studio@outlook.com</label>
+            <hr class="line" style="margin-top: 20px;"/>
+            <h3 lang-en="Q group" lang-zh="Q群：">Q群：</h3>
+            <label>684397263</label>
+        </div>
+        <div class="footer">
+            <p lang-en="copyright ©  Yuedong Studio 2024" lang-zh="版权所有 © 悦动工作室 2024">版权所有 © 悦动工作室 2024</p>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
